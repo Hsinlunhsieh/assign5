@@ -1,6 +1,6 @@
 class Brick{
 
-  int bSize = 40;
+  int bSize = 30;
   int bX;
   int bY;
   boolean die = false;
