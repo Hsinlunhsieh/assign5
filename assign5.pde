@@ -46,18 +46,7 @@ void setup() {
             checkBrickDead();
             checkWin();
             break;
-        
-       case GAME_PAUSE:
-            textSize(40);
-            textAlign(CENTER,CENTER);
-            fill(95, 194, 226);
-            text("PAUSE", 320, 240); 
-            textSize(20);
-            textAlign(CENTER,CENTER);
-            fill(95, 194, 226);
-            text("Press ENTER to Resume",320, 280); 
-            break;
-    
+            
       case GAME_WIN:
         fill(95, 194, 226);
         text("YOU WIN", 320, 280);
@@ -215,14 +204,6 @@ void statusCtrl() {
   if (key == ENTER) {
     switch(status) {
     case GAME_START:
-      status = GAME_PLAYING;
-      break;
-
-    case GAME_PLAYING:
-      status = GAME_PAUSE;
-      break;
-    
-    case GAME_PAUSE:
       status = GAME_PLAYING;
       break;
    
