@@ -86,8 +86,8 @@ void mousePressed() {
 
 void brickMaker(int brickNum,int columns) {   
   for(int i =0; i< brickNum; i++){
-      int row = i / columns;
-      int col = i % columns;
+      int row =int( i / columns);
+      int col =int( i % columns);
       int bX = 120 + col*40;
       int bY = 40 + row*40;
       brickArray[i]=new Brick(bX,bY);            
