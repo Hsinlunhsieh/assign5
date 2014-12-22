@@ -69,7 +69,7 @@ void setup() {
         textSize(40);
         textAlign(CENTER,CENTER);
         fill(95, 194, 226);
-        text("YOU WIN", 320, 280); 
+        text("YOU LOSE", 320, 280); 
         break;
       }
     }
