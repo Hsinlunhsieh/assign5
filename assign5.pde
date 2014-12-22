@@ -59,11 +59,17 @@ void setup() {
             break;
     
       case GAME_WIN:
-        winAnimate();
+        textSize(40);
+        textAlign(CENTER,CENTER);
+        fill(95, 194, 226);
+        text("YOU WIN", 320, 280);
         break;
     
       case GAME_LOSE:
-        loseAnimate();
+        textSize(40);
+        textAlign(CENTER,CENTER);
+        fill(95, 194, 226);
+        text("YOU WIN", 320, 280); 
         break;
       }
     }
@@ -192,22 +198,8 @@ void removeBall(Ball obj) {
       status = GAME_LOSE;
     }
   }
-  
-void winAnimate() {
-        textSize(40);
-        textAlign(CENTER,CENTER);
-        fill(95, 194, 226);
-        text("YOU WIN", 320, 280); 
 
-}
 
-void loseAnimate() {
-        textSize(40);
-        textAlign(CENTER,CENTER);
-        fill(95, 194, 226);
-        text("YOU LOSE",320, 280); 
-
-}
 
 
 void reset() {
