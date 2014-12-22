@@ -59,16 +59,14 @@ void setup() {
             break;
     
       case GAME_WIN:
-        textSize(40);
-        
         fill(95, 194, 226);
+        textSize(40);
         text("YOU WIN", 320, 280);
         break;
     
       case GAME_LOSE:
-        textSize(40);
-        
         fill(95, 194, 226);
+        textSize(40);
         text("YOU LOSE", 320, 280); 
         break;
       }
