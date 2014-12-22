@@ -161,8 +161,6 @@ void checkBrickDead() {
       /*------------Hit detect-------------*/ 
         && ball.isHit(ball.x, ball.y, ball.size/2, brick.bX, brick.bY, brick.bSize, brick.bSize) == true) {
         /*-------do something------*/
-        ball.xSpeed *= -1; 
-        ball.ySpeed *= -1;
         removeBrick(brick);
         point+=10;
       }
